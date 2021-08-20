@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Shop | Ecommerce Website Design</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/sass/main.css">
+</head>
+<body>
+<!--Header section-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/ecommerce-logo-png-11.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Shop</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 action-menu">
+                    <form class="search-form">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-cart4 position-relative">
+                                <span style="font-size: 12px"
+                                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1 </span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--Slider Section-->
+<section class="slider">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="container">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-6 slider-text">
+                            <h2 class="text-success">
+                                Order <span class="lighten">Online</span>, Save Your <br>
+                                <span class="lighten">Time</span>
+                            </h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur illo
+                                laborum optio porro quis reiciendis rerum sapiente velit veniam.</p>
+                            <a href="" class="btn-order-now">Order Now</a>
+                        </div>
+                        <div class="col-lg-6 slider-image">
+                            <img src="assets/images/product/f1.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-6 slider-text">
+                            <h2 class="text-success">
+                                Order <span class="lighten">Online</span>, Save Your <br>
+                                <span class="lighten">Time</span>
+                            </h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur illo
+                                laborum optio porro quis reiciendis rerum sapiente velit veniam.</p>
+                            <a href="" class="btn-order-now">Order Now <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                        <div class="col-lg-6 slider-image">
+                            <img src="assets/images/product/f3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!--Category product-->
+<section class="category-product">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Category Products</h2>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <img src="assets/images/product/product22.png" alt="">
+                        <h4>Carrot</h4>
+                        <a href="" class="view-all-btn">View All <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <img src="assets/images/product/product23.png" alt="">
+                        <h4>Onion</h4>
+                        <a href="" class="view-all-btn">View All <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <img src="assets/images/product/product27.png" alt="">
+                        <h4>Capsicum</h4>
+                        <a href="" class="view-all-btn">View All <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <img src="assets/images/product/product28.png" alt="">
+                        <h4>Broccoli</h4>
+                        <a href="" class="view-all-btn">View All <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Banner section-->
+<section class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="item d-flex">
+                    <div class="text">
+                        <p class="text-danger">Fresh Fruits</p>
+                        <h2>Healthy Food</h2>
+                        <p>Get 20% Off Selected Product</p>
+                        <a href="" class="order-now">Order Now</a>
+                    </div>
+                    <img src="assets/images/product/f3.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item d-flex">
+                    <div class="text">
+                        <p class="text-danger">Fresh Fruits</p>
+                        <h2>Fresh Vegetables</h2>
+                        <p>Get 20% Off Selected Product</p>
+                        <a href="" class="order-now">Order Now</a>
+                    </div>
+                    <img src="assets/images/product/product27.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Latest Product-->
+<section class="latest-product">
+    <div class="container">
+        <h2>Latest Products</h2>
+        <hr>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="assets/images/product/product27.png" alt="">
+                        <h2 class="product_name">
+                            <a href="">Organic Cauliflower (1kg)</a>
+                        </h2>
+                        <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <h2 class="price">৳ 200.00</h2>
+                        <div class="btn d-flex justify-content-between align-items-center">
+                            <a href="" class="add-to-cart-btn">
+                                <i class="bi bi-cart4"></i> Add to Cart
+                            </a>
+                            <a href="" class="add-to-favorite text-success">
+                                <i class="bi bi-heart "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="assets/images/product/product23.png" alt="">
+                        <h2 class="product_name">
+                            <a href="">Organic Cauliflower (1kg)</a>
+                        </h2>
+                        <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <h2 class="price">৳ 200.00</h2>
+                        <div class="btn d-flex justify-content-between align-items-center">
+                            <a href="" class="add-to-cart-btn">
+                                <i class="bi bi-cart4"></i> Add to Cart
+                            </a>
+                            <a href="" class="add-to-favorite text-success">
+                                <i class="bi bi-heart "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="assets/images/product/product22.png" alt="">
+                        <h2 class="product_name">
+                            <a href="">Fresh Carrot (1 kg)</a>
+                        </h2>
+                        <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <h2 class="price">৳ 200.00</h2>
+                        <div class="btn d-flex justify-content-between align-items-center">
+                            <a href="" class="add-to-cart-btn">
+                                <i class="bi bi-cart4"></i> Add to Cart
+                            </a>
+                            <a href="" class="add-to-favorite text-success">
+                                <i class="bi bi-heart "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="assets/images/product/product28.png" alt="">
+                        <h2 class="product_name">
+                            <a href="">Organic Cauliflower (1kg)</a>
+                        </h2>
+                        <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <h2 class="price">৳ 200.00</h2>
+                        <div class="btn d-flex justify-content-between align-items-center">
+                            <a href="" class="add-to-cart-btn">
+                                <i class="bi bi-cart4"></i> Add to Cart
+                            </a>
+                            <a href="" class="add-to-favorite text-success">
+                                <i class="bi bi-heart "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="latest-product">
+    <div class="container">
+        <h2>Most Sell Products</h2>
+        <hr>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="assets/images/product/product1.png" alt="">
+                        <h2 class="product_name">
+                            <a href="">Organic Cauliflower (1kg)</a>
+                        </h2>
+                        <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <h2 class="price">৳ 200.00</h2>
+                        <div class="btn d-flex justify-content-between align-items-center">
+                            <a href="" class="add-to-cart-btn">
+                                <i class="bi bi-cart4"></i> Add to Cart
+                            </a>
+                            <a href="" class="add-to-favorite text-success">
+                                <i class="bi bi-heart "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="assets/images/product/product2.png" alt="">
+                        <h2 class="product_name">
+                            <a href="">Organic Cauliflower (1kg)</a>
+                        </h2>
+                        <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <h2 class="price">৳ 200.00</h2>
+                        <div class="btn d-flex justify-content-between align-items-center">
+                            <a href="" class="add-to-cart-btn">
+                                <i class="bi bi-cart4"></i> Add to Cart
+                            </a>
+                            <a href="" class="add-to-favorite text-success">
+                                <i class="bi bi-heart "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="assets/images/product/product3.png" alt="">
+                        <h2 class="product_name">
+                            <a href="">Fresh Carrot (1 kg)</a>
+                        </h2>
+                        <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <h2 class="price">৳ 200.00</h2>
+                        <div class="btn d-flex justify-content-between align-items-center">
+                            <a href="" class="add-to-cart-btn">
+                                <i class="bi bi-cart4"></i> Add to Cart
+                            </a>
+                            <a href="" class="add-to-favorite text-success">
+                                <i class="bi bi-heart "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="assets/images/product/product4.png" alt="">
+                        <h2 class="product_name">
+                            <a href="">Organic Cauliflower (1kg)</a>
+                        </h2>
+                        <div class="rating">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <h2 class="price">৳ 200.00</h2>
+                        <div class="btn d-flex justify-content-between align-items-center">
+                            <a href="" class="add-to-cart-btn">
+                                <i class="bi bi-cart4"></i> Add to Cart
+                            </a>
+                            <a href="" class="add-to-favorite text-success">
+                                <i class="bi bi-heart "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--Promotion banner-->
+<section class="banner position-relative">
+    <div class="container">
+        <img class="w-100" src="assets/images/banner.jpg" alt="">
+        <h1 class="promo-title">Order Online Save Your Time</h1>
+    </div>
+</section>
+
+<!--Footer section-->
+<footer class="border-top py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <img src="assets/images/ecommerce-logo-png-11.png" height="40" alt="">
+                <h4 class="mt-3">Get the app</h4>
+                <p>NEfresh App is now available on Google Play & App Store. Get it now.</p>
+                <img src="assets/images/store1.png" alt="">
+                <img src="assets/images/store2.png" alt="">
+            </div>
+            <div class="col-lg-3">
+                <h4>Information</h4>
+                <ul class="footer-list">
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Shipping Policy</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4>User Area</h4>
+                <ul class="footer-list">
+                    <li><a href="">My account</a></li>
+                    <li><a href="">My Cart</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Checkout</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4>Contact Info</h4>
+                <p>07577985281</p>
+                <p>509 724 580 - issued in New York (NY) on 03/11/2019, expires 08/11/2023</p>
+                <p>support@eshop.com</p>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright-text mt-3 text-center">
+            <a href="">Copyright © 2021 <span class="text-dark fw-bold">Web</span>
+                <span  class="text-danger fw-bold">Burden</span></a>
+        </div>
+    </div>
+</footer>
+<div class="loading" id="loader">
+    <img src="assets/images/preloader.svg" alt="">
+</div>
+<script>
+    setTimeout(() => {
+        document.getElementById('loader').style.display= "none"
+    },1000)
+</script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>
